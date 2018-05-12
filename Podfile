@@ -6,5 +6,6 @@ target 'FaceIt' do
   use_frameworks!
 
   # Pods for FaceIt
+  pod 'Alamofire'
 
 end
