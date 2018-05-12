@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BF3842A331A96488ACE8AA0 /* Pods_FaceIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11890035C3169D7BE9C65E9 /* Pods_FaceIt.framework */; };
 		8484305120A6A06C00F2578C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484305020A6A06C00F2578C /* AppDelegate.swift */; };
 		8484305320A6A06C00F2578C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484305220A6A06C00F2578C /* ViewController.swift */; };
 		8484305620A6A06C00F2578C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484305420A6A06C00F2578C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135B05D528523D1D686B5C27 /* Pods-FaceIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceIt/Pods-FaceIt.debug.xcconfig"; sourceTree = "<group>"; };
 		8484304D20A6A06B00F2578C /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484305020A6A06C00F2578C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8484305220A6A06C00F2578C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8484305720A6A06D00F2578C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8484305A20A6A06D00F2578C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8484305C20A6A06D00F2578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11890035C3169D7BE9C65E9 /* Pods_FaceIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC38C45A28DDAF94771C5799 /* Pods-FaceIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceIt/Pods-FaceIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF3842A331A96488ACE8AA0 /* Pods_FaceIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				8484304F20A6A06B00F2578C /* FaceIt */,
 				8484304E20A6A06B00F2578C /* Products */,
+				D97474574BDC2647B8134E3D /* Pods */,
+				C2EBD68FE84CF468147ABF2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = FaceIt;
 			sourceTree = "<group>";
 		};
+		C2EBD68FE84CF468147ABF2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F11890035C3169D7BE9C65E9 /* Pods_FaceIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D97474574BDC2647B8134E3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				135B05D528523D1D686B5C27 /* Pods-FaceIt.debug.xcconfig */,
+				FC38C45A28DDAF94771C5799 /* Pods-FaceIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8484305F20A6A06D00F2578C /* Build configuration list for PBXNativeTarget "FaceIt" */;
 			buildPhases = (
+				ED16050749E6F11A256BC5AD /* [CP] Check Pods Manifest.lock */,
 				8484304920A6A06B00F2578C /* Sources */,
 				8484304A20A6A06B00F2578C /* Frameworks */,
 				8484304B20A6A06B00F2578C /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED16050749E6F11A256BC5AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8484304920A6A06B00F2578C /* Sources */ = {
@@ -278,15 +324,13 @@
 		};
 		8484306020A6A06D00F2578C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135B05D528523D1D686B5C27 /* Pods-FaceIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
 				INFOPLIST_FILE = FaceIt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maimieng.FaceIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +340,13 @@
 		};
 		8484306120A6A06D00F2578C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC38C45A28DDAF94771C5799 /* Pods-FaceIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
 				INFOPLIST_FILE = FaceIt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maimieng.FaceIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
